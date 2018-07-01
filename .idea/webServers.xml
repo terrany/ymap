@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4fa42f34-5ea7-4827-a725-b8883b7d7246" name="йцу" url="http://188.120.253.253">
+        <fileTransfer host="188.120.253.253" port="21" rootFolder="/web/mojadostavka.ru/public_html/public">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

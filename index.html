@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/styles/app.css">
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/underscore/underscore-min.js"></script>
+
+    <script src="/node_modules/angular/angular.min.js"></script>
+
+    <script src="/assets/js/app.config.js"></script>
+    <script src="/assets/js/app.controllers.js"></script>
+    <script src="/assets/js/app.directives.js"></script>
+    <script src="/assets/js/app.filters.js"></script>
+    <script src="/assets/js/app.services.js"></script>
+</head>
+<body>
+<div class="container" ng-controller="MainCtrl">
+    <div class="row" ng-show="yaMapsIsReady">
+        <div class="col mx-auto mt-3">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group" search-field="Адрес начальной точки" ng-model="from"></div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group" search-field="Адрес конечной точки" ng-model="to"></div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <button class="btn btn-success btn-block" ng-click="go()">Поехали</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div yandex-map-layout=""></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

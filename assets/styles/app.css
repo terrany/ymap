@@ -1,0 +1,13 @@
+.autocomplete {
+  background: #fff;
+  position: relative;
+  z-index: 9;
+}
+.autocomplete ul {
+  display: block;
+  position: absolute;
+  top: 0;
+}
+.autocomplete ul li {
+  cursor: pointer;
+}

@@ -1,0 +1,17 @@
+<div class="form-group">
+    <label for="{{id}}">{{title}}</label>
+    <input id="{{id}}"
+           ng-model="location"
+           ng-change="searchDo()"
+           ng-focus="focus = true"
+           ng-blur="focus = false"
+           type="text"
+           class="form-control"/>
+    <div class="autocomplete" ng-if="showAutoComplete()">
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="item in autoCompleteItems" ng-mousedown="selectPoint(item)">
+                {{item.displayName}}
+            </li>
+        </ul>
+    </div>
+</div>
